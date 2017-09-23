@@ -9,6 +9,7 @@ Create a Virtual Enviroment
 
 * Fortran ( gfortran )
 * C (build-essential)
+* OpenMp (gcc-multilib )
 
 * Virtualenv
 * Python 3.5
