@@ -7,14 +7,16 @@ The objective with this project is to optimize the execution of Ellc code to obt
 
 Create a Virtual Enviroment
 
+* Fortran ( gfortran )
+* C (build-essential)
 
-Virtualenv
-Python 3.5
-Pip 
-Numpy
-Ellc 1.5.5
-Cython 0.27
-Pandas 
+* Virtualenv
+* Python 3.5
+* Pip 
+* Numpy
+* Ellc 1.5.5
+* Cython 0.27
+* Pandas 
 
 
 
