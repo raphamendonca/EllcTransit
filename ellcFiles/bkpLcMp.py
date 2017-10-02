@@ -16,13 +16,12 @@
 
 from __future__ import (absolute_import, division, print_function,
                                                 unicode_literals)
-
-import cython
-from cython.parallel import prange, parallel
-
 import numpy as np
 
 from ellc import ellc_f
+
+import cython
+from cython.parallel import prange, parallel
 
 @cython.wraparound(False)
 @cython.boundscheck(False)
@@ -529,16 +528,14 @@ def lcMp(process, t_obs, radius_1, radius_2, sbratio, incl,
     flux = np.zeros(n_obs)
 
     lista = len(t_calc)
-    cdef Py_ssize_t j = 100
 
-    with nogil, parallel(num_threads = process):
+    with parallel(num_threads = process):
         for j in prange(lista, schedule='dynamic'):
-            with gil:
-                if np.isnan(lc_rv_flags[j,0]):
-                    print('Bad flux:',lc_rv_flags[j,:])
-                    lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
-                    return -1
-                flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]
+   	        if np.isnan(lc_rv_flags[j,0]):
+	            print('Bad flux:',lc_rv_flags[j,:])
+                lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
+                return -1
+            flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]
 
     t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
     n_obs_0 = len(t_obs_0)
