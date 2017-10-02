@@ -23,7 +23,9 @@ from ellc import ellc_f
 import cython
 from cython.parallel import prange, parallel
 
+@cython.wraparound(False)
 @cython.boundscheck(False)
+@cython.nonecheck(False)
 def lcMp(process, t_obs, radius_1, radius_2, sbratio, incl,
              light_3 = 0,
              t_zero = 0, period = 1,
@@ -525,10 +527,12 @@ def lcMp(process, t_obs, radius_1, radius_2, sbratio, incl,
     lc_rv_flags = ellc_f.ellc.lc(t_calc,par,ipar,spar_1,spar_2,verbose)
     flux = np.zeros(n_obs)
 
+    lista = len(t_calc)
+
     with parallel(num_threads = process):
-        for j in prange(len(t_calc), schedule='dynamic'):
-            if np.isnan(lc_rv_flags[j,0]):
-                print('Bad flux:',lc_rv_flags[j,:])
+        for j in prange(lista, schedule='dynamic'):
+   	        if np.isnan(lc_rv_flags[j,0]):
+	            print('Bad flux:',lc_rv_flags[j,:])
                 lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
                 return -1
             flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]

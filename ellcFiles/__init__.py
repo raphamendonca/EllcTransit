@@ -44,7 +44,7 @@ except:
       pass
 
 try:
-     from ellc.lcMp import lcMp
+     from lcMp import lcMp
 except:
      pass
 
