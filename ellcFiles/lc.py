@@ -22,6 +22,7 @@ from __future__ import (absolute_import, division, print_function,
 import numpy as np
 
 from ellc import ellc_f
+from datetime import datetime
 
 def lc(t_obs, radius_1, radius_2, sbratio, incl,
        light_3 = 0,
@@ -509,6 +510,8 @@ def lc(t_obs, radius_1, radius_2, sbratio, incl,
   w_calc = np.ones_like(t_calc)
   i_calc = i_obs[n_int_array == 1]
   n_int_max = np.amax(n_int_array)
+
+  startTime = datetime.now()
   for i_int in np.unique(n_int_array[n_int_array > 1]) :
     t_obs_i = t_obs_array[n_int_array == i_int]
     t_exp_i = t_exp_array[n_int_array == i_int]
@@ -520,15 +523,21 @@ def lc(t_obs, radius_1, radius_2, sbratio, incl,
         w_calc = np.append(w_calc, 0.5*np.ones_like(t_obs_i)/(i_int-1.))
       else:
         w_calc = np.append(w_calc, np.ones_like(t_obs_i)/(i_int-1.))
-
+  endTime = datetime.now()
+  print(endTime - startTime)
+  
   lc_rv_flags = ellc_f.ellc.lc(t_calc,par,ipar,spar_1,spar_2,verbose)
   flux = np.zeros(n_obs)
+
+  startTime3 = datetime.now()
   for j in range(0,len(t_calc)):
     if np.isnan(lc_rv_flags[j,0]):
       print('Bad flux:',lc_rv_flags[j,:])
       lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
       return -1
     flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]
+  endTime3 = datetime.now()
+  print(endTime3 - startTime3)
 
   t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
   n_obs_0 = len(t_obs_0)

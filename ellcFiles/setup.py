@@ -9,7 +9,7 @@ ext_modules = [
         #libraries=["gomp"],
         extra_compile_args=['-fopenmp'],
         extra_link_args=['-fopenmp'],
-        language='c'
+        language='python'
     )
 ]
 

@@ -28,6 +28,7 @@ from cython.parallel import prange, parallel
 import numpy as np
 
 from ellc import ellc_f
+from datetime import datetime
 
 @cython.wraparound(False)
 @cython.boundscheck(False)
@@ -517,7 +518,6 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     i_calc = i_obs[n_int_array == 1]
 
     n_int_max = np.amax(n_int_array)
-
     for i_int in np.unique(n_int_array[n_int_array > 1]) :
         t_obs_i = t_obs_array[n_int_array == i_int]
         t_exp_i = t_exp_array[n_int_array == i_int]
@@ -535,7 +535,7 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
 
     lista = len(t_calc)
 #    openmp.emp_set_dynamic(1)
-    
+    startTime = datetime.now()    
     cdef Py_ssize_t j
     
     with nogil, parallel(num_threads = 2):
@@ -546,6 +546,9 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
                     lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
                     return -1
                 flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]
+
+    endTime = datetime.now()
+    print(endTime - startTime)
 
     t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
     n_obs_0 = len(t_obs_0)
