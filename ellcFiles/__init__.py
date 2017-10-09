@@ -43,8 +43,14 @@ try:
 except:
       pass
 
+
 try:
-     from ellc.lcMp import lcMp
+     from ellc.lcOpenMp import lcOpenMp
+except:
+     pass
+
+try:
+     from ellc.lcmp import lcmp
 except:
      pass
 
