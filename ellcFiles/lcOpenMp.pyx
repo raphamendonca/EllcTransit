@@ -24,6 +24,7 @@ import cython
 #from cython cimport parallel
 from cython.parallel import prange, parallel
 #cimport openmp
+from libc.math cimport isnan
 
 import numpy as np
 
@@ -535,14 +536,20 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
 
     lista = len(t_calc)
 #    openmp.emp_set_dynamic(1)
-    startTime = datetime.now()    
+    startTime = datetime.now()
     cdef Py_ssize_t j
+    # np.isnan()
+    # ellc_f.ellc.lc()
+    # lc_dummy
+    # par, ipar, spar_1,spar_2
+    # flux[i_calc[j]], lc_rv_flags[j,0], w_calc[j]
     
-    with nogil, parallel(num_threads = 2):
+    with nogil, parallel(num_threads = 8):
+        # dynamic, static, guided, runtime
         for j in prange(lista, schedule='dynamic'):
             with gil:
-                if np.isnan(lc_rv_flags[j,0]):
-                    print('Bad flux:',lc_rv_flags[j,:])
+                if isnan(lc_rv_flags[j,0]):
+                    #print('Bad flux:',lc_rv_flags[j,:])
                     lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
                     return -1
                 flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]
