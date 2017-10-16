@@ -537,11 +537,12 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     lista = len(t_calc)
 #    openmp.emp_set_dynamic(1)
     startTime = datetime.now()
+    cdef Py_ssize_t lcel
     cdef Py_ssize_t j
     # np.isnan()
     # ellc_f.ellc.lc()
     # lc_dummy
-    # par, ipar, spar_1,spar_2
+    # par, ipar, spar_1,spar_2lc_rv_flags
     # flux[i_calc[j]], lc_rv_flags[j,0], w_calc[j]
     
     with nogil, parallel(num_threads = 8):
