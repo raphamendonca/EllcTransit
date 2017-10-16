@@ -27,7 +27,6 @@ from cython.parallel import prange, parallel
 from libc.math cimport isnan
 cimport numpy as np
 
-
 import numpy as np
 
 from ellc import ellc_f
@@ -543,9 +542,15 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     cdef np.ndarray[double,ndim=2]  cy_Lc_rv_flags 
     cy_Lc_rv_flags = lc_rv_flags
     
-    cdef np.ndarray[double,ndim=2] cy_w_calc
+    cdef np.ndarray[double,ndim=1] cy_w_calc
     cy_w_calc = w_calc
     
+    cdef np.ndarray[double,ndim=1] cyi_calc
+    cyi_calc = i_calc
+
+    cdef np.ndarray[double,ndim=1] cy_flux
+    cy_flux = flux
+
     cdef Py_ssize_t j
     
     # np.isnan()
@@ -557,18 +562,21 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     with nogil, parallel(num_threads = 8):
         # dynamic, static, guided, runtime
         for j in prange(lista, schedule='dynamic'):
-            with gil:
-                if isnan(cy_Lc_rv_flags[j,0]):
+            if isnan(cy_Lc_rv_flags[j,0]):
+                with gil:
                     #print('Bad flux:',lc_rv_flags[j,:])
                     lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
                     return -1
-                flux[i_calc[j]] += cy_Lc_rv_flags[j,0] * cy_w_calc[j]
+            with gil:
+                cy_flux[cyi_calc[j]] += cy_Lc_rv_flags[j,0] * cy_w_calc[j]
 
+    flux = cy_flux
     endTime = datetime.now()
     print(endTime - startTime)
 
     t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
     n_obs_0 = len(t_obs_0)
+
     if n_obs_0 > 0 :
         i_sort = np.argsort(t_calc)
         t_int = t_calc[i_sort]
