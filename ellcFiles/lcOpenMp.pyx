@@ -520,6 +520,7 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     i_calc = i_obs[n_int_array == 1]
 
     n_int_max = np.amax(n_int_array)
+   #startTime0 = datetime.now()
     for i_int in np.unique(n_int_array[n_int_array > 1]) :
         t_obs_i = t_obs_array[n_int_array == i_int]
         t_exp_i = t_exp_array[n_int_array == i_int]
@@ -532,47 +533,66 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
             else:
                 w_calc = np.append(w_calc, np.ones_like(t_obs_i)/(i_int-1.))
 
+    #endTime0 = datetime.now()
+    #print("lcOpenMp - for 1 :",endTime0 - startTime0)
+
     lc_rv_flags = ellc_f.ellc.lc(t_calc,par,ipar,spar_1,spar_2,verbose)
     flux = np.zeros(n_obs)
 
     lista = len(t_calc)
 #    openmp.emp_set_dynamic(1)
-    startTime = datetime.now()
+    #startTime = datetime.now()
 
-    cdef np.ndarray[double,ndim=2]  cy_Lc_rv_flags 
+    cdef np.ndarray[double,ndim=2]  cy_Lc_rv_flags #20171015a
     cy_Lc_rv_flags = lc_rv_flags
     
-    cdef np.ndarray[double,ndim=1] cy_w_calc
+    cdef np.ndarray[double,ndim=1] cy_w_calc #20171015c
     cy_w_calc = w_calc
     
-    cdef np.ndarray[double,ndim=1] cyi_calc
+    cdef np.ndarray[long,ndim=1] cyi_calc #20171016a
     cyi_calc = i_calc
 
-    cdef np.ndarray[double,ndim=1] cy_flux
+    cdef np.ndarray[double,ndim=1] cy_flux #20171015c
     cy_flux = flux
 
+    cdef np.ndarray[double,ndim=1] cy_t_calc
+    cy_t_calc = t_calc
+
+    cdef np.ndarray[double,ndim=1] cy_par 
+    cy_par = par
+    
+    cdef np.ndarray[long, ndim=1] cy_ipar
+    cy_ipar = ipar
+    
+    cdef np.ndarray[double,ndim=2] cy_spar_1
+    cy_spar_1 = spar_1
+
+    cdef np.ndarray[double,ndim=2] cy_spar_2    
+    cy_spar_2 = spar_2
+
+    cdef np.ndarray[double,ndim=2] cy_lc_dummy
+
     cdef Py_ssize_t j
-    
-    # np.isnan()
+
     # ellc_f.ellc.lc()
-    # lc_dummy
-    # par, ipar, spar_1,spar_2lc_rv_flags
-    # flux[i_calc[j]], lc_rv_flags[j,0], w_calc[j]
     
-    with nogil, parallel(num_threads = 8):
+    with nogil, parallel(num_threads = 2):
         # dynamic, static, guided, runtime
         for j in prange(lista, schedule='dynamic'):
             if isnan(cy_Lc_rv_flags[j,0]):
                 with gil:
                     #print('Bad flux:',lc_rv_flags[j,:])
-                    lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
+                    cy_lc_dummy = 1
+                    ellc_f.ellc.lc(cy_t_calc[j],cy_par,cy_ipar,cy_spar_1,cy_spar_2,9)
                     return -1
-            with gil:
-                cy_flux[cyi_calc[j]] += cy_Lc_rv_flags[j,0] * cy_w_calc[j]
+            #with gil:
+            cy_flux[cyi_calc[j]] += cy_Lc_rv_flags[j,0] * cy_w_calc[j]
 
+    #lc_dummy = cy_lc_dummy
+    #print(lc_dummy)
     flux = cy_flux
-    endTime = datetime.now()
-    print(endTime - startTime)
+    #endTime = datetime.now()
+    #print("lcOpenMp - for 2 Multiprocess:",endTime - startTime)
 
     t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
     n_obs_0 = len(t_obs_0)
