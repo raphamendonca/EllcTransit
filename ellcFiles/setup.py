@@ -13,7 +13,6 @@ ext_modules = [
         extra_link_args=['-fopenmp'],
         include_dirs=[numpy.get_include()],
         language='python'
-
     )
 ]
 

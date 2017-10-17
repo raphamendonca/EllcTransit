@@ -529,15 +529,15 @@ def lc(t_obs, radius_1, radius_2, sbratio, incl,
   lc_rv_flags = ellc_f.ellc.lc(t_calc,par,ipar,spar_1,spar_2,verbose)
   flux = np.zeros(n_obs)
 
-  #startTime3 = datetime.now()
+  startTime3 = datetime.now()
   for j in range(0,len(t_calc)):
     if np.isnan(lc_rv_flags[j,0]):
       print('Bad flux:',lc_rv_flags[j,:])
       lc_dummy = ellc_f.ellc.lc(t_calc[j],par,ipar,spar_1,spar_2,9)
       return -1
     flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]
-  #endTime3 = datetime.now()
-  #print("lcOpenMp - for 2 :",endTime3 - startTime3)
+  endTime3 = datetime.now()
+  print("lcOpenMp - for 2 :",endTime3 - startTime3)
 
   t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
   n_obs_0 = len(t_obs_0)

@@ -23,7 +23,7 @@ from __future__ import (absolute_import, division, print_function,
 import cython
 #from cython cimport parallel
 from cython.parallel import prange, parallel
-#cimport openmp
+
 from libc.math cimport isnan
 cimport numpy as np
 
@@ -541,7 +541,7 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
 
     lista = len(t_calc)
 #    openmp.emp_set_dynamic(1)
-    #startTime = datetime.now()
+    startTime = datetime.now()
 
     cdef np.ndarray[double,ndim=2]  cy_Lc_rv_flags #20171015a
     cy_Lc_rv_flags = lc_rv_flags
@@ -576,14 +576,13 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
 
     # ellc_f.ellc.lc()
     
-    with nogil, parallel(num_threads = 2):
+    with nogil, parallel(num_threads = 100):
         # dynamic, static, guided, runtime
-        for j in prange(lista, schedule='dynamic'):
+        for j in prange(lista, schedule='static'):
             if isnan(cy_Lc_rv_flags[j,0]):
                 with gil:
                     #print('Bad flux:',lc_rv_flags[j,:])
-                    cy_lc_dummy = 1
-                    ellc_f.ellc.lc(cy_t_calc[j],cy_par,cy_ipar,cy_spar_1,cy_spar_2,9)
+                    cy_lc_dummy = ellc_f.ellc.lcOpenMp(cy_t_calc[j],cy_par,cy_ipar,cy_spar_1,cy_spar_2,9)
                     return -1
             #with gil:
             cy_flux[cyi_calc[j]] += cy_Lc_rv_flags[j,0] * cy_w_calc[j]
@@ -591,9 +590,10 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     #lc_dummy = cy_lc_dummy
     #print(lc_dummy)
     flux = cy_flux
-    #endTime = datetime.now()
-    #print("lcOpenMp - for 2 Multiprocess:",endTime - startTime)
+    endTime = datetime.now()
+    print("lcOpenMp - for 2 Multiprocess:",endTime - startTime)
 
+    
     t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
     n_obs_0 = len(t_obs_0)
 
