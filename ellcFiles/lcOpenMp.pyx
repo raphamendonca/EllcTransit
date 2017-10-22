@@ -322,7 +322,7 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     .. [5] James, 1964, ApJ, 140, 552.
 
     """
-
+    print("Check 1 : ", datetime.now())
     # Copy control parameters into an np.array
     gridname_to_gridsize = {
         "very_sparse" : 4,
@@ -379,6 +379,8 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     if s2 is None:
         raise Exception("Invalid star shape name")
 
+    print("Check 2 : ", datetime.now())
+
     if spots_1 is None:
         spar_1 = np.zeros([1,1])
         n_spots_1 = 0
@@ -401,6 +403,7 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
             dtype=int)
 
     # Copy binary parameters into an np.array
+    print("Check 3 : ", datetime.now())
 
     if (radius_1 <= 0) or (radius_1 > 1):
         raise ValueError("radius_1 argument out of range")
@@ -445,6 +448,9 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
         "sqrt"   : 2,
         "exp"    : 2
     }
+
+    print("Check 4 : ", datetime.now())
+
     ld_n_1 = ld_to_n.get(ldstr_1,None)
     try:
         par[11:11+ld_n_1] = ldc_1
@@ -472,6 +478,8 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
 
     if bfac_2 is not None : par[26] = bfac_2
 
+    print("Check 5 : ", datetime.now())
+
     if heat_1 is not None :
         t = np.array(heat_1)
         if t.size == 1:
@@ -498,6 +506,8 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
 
     if vsini_2 is not None : par[36] = vsini_2
 
+    print("Check 6 : ", datetime.now())
+
     t_obs_array = np.array(t_obs)
     n_obs = len(t_obs_array)
     if t_exp is None:
@@ -519,8 +529,11 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     w_calc = np.ones_like(t_calc)
     i_calc = i_obs[n_int_array == 1]
 
+    print("Check 7 : ", datetime.now())
+
     n_int_max = np.amax(n_int_array)
-   #startTime0 = datetime.now()
+    print("Check 7a : ", datetime.now())
+
     for i_int in np.unique(n_int_array[n_int_array > 1]) :
         t_obs_i = t_obs_array[n_int_array == i_int]
         t_exp_i = t_exp_array[n_int_array == i_int]
@@ -533,11 +546,15 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
             else:
                 w_calc = np.append(w_calc, np.ones_like(t_obs_i)/(i_int-1.))
 
-    #endTime0 = datetime.now()
-    #print("lcOpenMp - for 1 :",endTime0 - startTime0)
+    print("Check 7b : ", datetime.now())
 
     lc_rv_flags = ellc_f.ellc.lc(t_calc,par,ipar,spar_1,spar_2,verbose)
+
+    print("Check 7c : ", datetime.now())
+
     flux = np.zeros(n_obs)
+
+    print("Check 8 : ", datetime.now())
 
     lista = len(t_calc)
 #    openmp.emp_set_dynamic(1)
@@ -574,15 +591,16 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
 
     cdef Py_ssize_t j
 
+    print("Check 9 : ", datetime.now())
     # ellc_f.ellc.lc()
     
-    with nogil, parallel(num_threads = 100):
+    with nogil, parallel(num_threads = 4):
         # dynamic, static, guided, runtime
         for j in prange(lista, schedule='static'):
             if isnan(cy_Lc_rv_flags[j,0]):
                 with gil:
                     #print('Bad flux:',lc_rv_flags[j,:])
-                    cy_lc_dummy = ellc_f.ellc.lcOpenMp(cy_t_calc[j],cy_par,cy_ipar,cy_spar_1,cy_spar_2,9)
+                    cy_lc_dummy = ellc_f.ellc.lc(cy_t_calc[j],cy_par,cy_ipar,cy_spar_1,cy_spar_2,9)
                     return -1
             #with gil:
             cy_flux[cyi_calc[j]] += cy_Lc_rv_flags[j,0] * cy_w_calc[j]
@@ -590,10 +608,11 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     #lc_dummy = cy_lc_dummy
     #print(lc_dummy)
     flux = cy_flux
+
     endTime = datetime.now()
     print("lcOpenMp - for 2 Multiprocess:",endTime - startTime)
 
-    
+    print("Check 10 : ", datetime.now())
     t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
     n_obs_0 = len(t_obs_0)
 
@@ -602,5 +621,7 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
         t_int = t_calc[i_sort]
         f_int = lc_rv_flags[i_sort,0]
         flux[n_int_array == 0 ] = np.interp(t_obs_0,t_int,f_int)
+
+    print("Check fim : ", datetime.now())
 
     return flux
