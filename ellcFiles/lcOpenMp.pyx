@@ -610,7 +610,7 @@ def lcOpenMp(t_obs, radius_1, radius_2, sbratio, incl,
     flux = cy_flux
 
     endTime = datetime.now()
-    #print("lcOpenMp - for 2 Multiprocess:",endTime - startTime)
+    print("lcOpenMp - for 2: ",endTime - startTime, " - multi")
 
     #print("Check 10 : ", datetime.now())
     t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated

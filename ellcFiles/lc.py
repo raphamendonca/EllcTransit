@@ -537,7 +537,7 @@ def lc(t_obs, radius_1, radius_2, sbratio, incl,
       return -1
     flux[i_calc[j]] += lc_rv_flags[j,0]*w_calc[j]
   endTime3 = datetime.now()
-  print("lcOpenMp - for 2 :",endTime3 - startTime3)
+  print("  lc     - for 2 : ",endTime3 - startTime3, "Sequencial")
 
   t_obs_0 = t_obs_array[n_int_array == 0 ] # Points to be interpolated
   n_obs_0 = len(t_obs_0)

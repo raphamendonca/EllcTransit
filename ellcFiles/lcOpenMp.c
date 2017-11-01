@@ -1657,6 +1657,7 @@ int __pyx_module_is_main_ellc__lcOpenMp = 0;
 /* Implementation of 'ellc.lcOpenMp' */
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_range;
+static PyObject *__pyx_builtin_print;
 static PyObject *__pyx_builtin_RuntimeError;
 static PyObject *__pyx_builtin_ImportError;
 static const char __pyx_k_a[] = "a";
@@ -1710,9 +1711,11 @@ static const char __pyx_k_j_int[] = "j_int";
 static const char __pyx_k_ldc_1[] = "ldc_1";
 static const char __pyx_k_ldc_2[] = "ldc_2";
 static const char __pyx_k_lista[] = "lista";
+static const char __pyx_k_multi[] = " - multi";
 static const char __pyx_k_n_int[] = "n_int";
 static const char __pyx_k_n_obs[] = "n_obs";
 static const char __pyx_k_numpy[] = "numpy";
+static const char __pyx_k_print[] = "print";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_roche[] = "roche";
 static const char __pyx_k_shape[] = "shape";
@@ -1803,6 +1806,7 @@ static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_lcOpenMp_pyx[] = "lcOpenMp.pyx";
 static const char __pyx_k_ellc_lcOpenMp[] = "ellc.lcOpenMp";
 static const char __pyx_k_cy_Lc_rv_flags[] = "cy_Lc_rv_flags";
+static const char __pyx_k_lcOpenMp_for_2[] = "lcOpenMp - for 2: ";
 static const char __pyx_k_ldstr_to_ldcode[] = "ldstr_to_ldcode";
 static const char __pyx_k_lcOpenMp_line_38[] = "lcOpenMp (line 38)";
 static const char __pyx_k_No_n_int_values_1[] = "No n_int values > 1.";
@@ -1912,6 +1916,7 @@ static PyObject *__pyx_n_s_lambda_1;
 static PyObject *__pyx_n_s_lambda_2;
 static PyObject *__pyx_n_s_lc;
 static PyObject *__pyx_n_s_lcOpenMp;
+static PyObject *__pyx_kp_u_lcOpenMp_for_2;
 static PyObject *__pyx_kp_u_lcOpenMp_line_38;
 static PyObject *__pyx_kp_s_lcOpenMp_pyx;
 static PyObject *__pyx_n_s_lc_rv_flags;
@@ -1932,6 +1937,7 @@ static PyObject *__pyx_n_u_lin;
 static PyObject *__pyx_n_s_lista;
 static PyObject *__pyx_n_u_log;
 static PyObject *__pyx_n_s_main;
+static PyObject *__pyx_kp_u_multi;
 static PyObject *__pyx_n_s_n1;
 static PyObject *__pyx_n_s_n2;
 static PyObject *__pyx_n_s_n_int;
@@ -1956,6 +1962,7 @@ static PyObject *__pyx_n_s_par;
 static PyObject *__pyx_n_s_period;
 static PyObject *__pyx_n_u_poly1p5;
 static PyObject *__pyx_n_u_poly3p0;
+static PyObject *__pyx_n_s_print;
 static PyObject *__pyx_n_s_q;
 static PyObject *__pyx_n_u_quad;
 static PyObject *__pyx_n_s_radius_1;
@@ -2788,7 +2795,7 @@ static PyObject *__pyx_pf_4ellc_8lcOpenMp_lcOpenMp(CYTHON_UNUSED PyObject *__pyx
   PyObject *__pyx_v_lc_rv_flags = NULL;
   PyObject *__pyx_v_flux = NULL;
   CYTHON_UNUSED Py_ssize_t __pyx_v_lista;
-  CYTHON_UNUSED PyObject *__pyx_v_startTime = NULL;
+  PyObject *__pyx_v_startTime = NULL;
   PyArrayObject *__pyx_v_cy_Lc_rv_flags = 0;
   PyArrayObject *__pyx_v_cy_w_calc = 0;
   PyArrayObject *__pyx_v_cyi_calc = 0;
@@ -2800,7 +2807,7 @@ static PyObject *__pyx_pf_4ellc_8lcOpenMp_lcOpenMp(CYTHON_UNUSED PyObject *__pyx
   PyArrayObject *__pyx_v_cy_spar_2 = 0;
   CYTHON_UNUSED PyArrayObject *__pyx_v_cy_lc_dummy = 0;
   Py_ssize_t __pyx_v_j;
-  CYTHON_UNUSED PyObject *__pyx_v_endTime = NULL;
+  PyObject *__pyx_v_endTime = NULL;
   PyObject *__pyx_v_t_obs_0 = NULL;
   Py_ssize_t __pyx_v_n_obs_0;
   PyObject *__pyx_v_i_sort = NULL;
@@ -7145,7 +7152,7 @@ static PyObject *__pyx_pf_4ellc_8lcOpenMp_lcOpenMp(CYTHON_UNUSED PyObject *__pyx
  *     flux = cy_flux
  * 
  *     endTime = datetime.now()             # <<<<<<<<<<<<<<
- *     #print("lcOpenMp - for 2 Multiprocess:",endTime - startTime)
+ *     print("lcOpenMp - for 2: ",endTime - startTime, " - multi")
  * 
  */
   __pyx_t_18 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 612, __pyx_L1_error)
@@ -7173,6 +7180,31 @@ static PyObject *__pyx_pf_4ellc_8lcOpenMp_lcOpenMp(CYTHON_UNUSED PyObject *__pyx
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_endTime = __pyx_t_7;
   __pyx_t_7 = 0;
+
+  /* "ellc/lcOpenMp.pyx":613
+ * 
+ *     endTime = datetime.now()
+ *     print("lcOpenMp - for 2: ",endTime - startTime, " - multi")             # <<<<<<<<<<<<<<
+ * 
+ *     #print("Check 10 : ", datetime.now())
+ */
+  __pyx_t_7 = PyNumber_Subtract(__pyx_v_endTime, __pyx_v_startTime); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 613, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 613, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_u_lcOpenMp_for_2);
+  __Pyx_GIVEREF(__pyx_kp_u_lcOpenMp_for_2);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_u_lcOpenMp_for_2);
+  __Pyx_GIVEREF(__pyx_t_7);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_7);
+  __Pyx_INCREF(__pyx_kp_u_multi);
+  __Pyx_GIVEREF(__pyx_kp_u_multi);
+  PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_kp_u_multi);
+  __pyx_t_7 = 0;
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_5, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 613, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "ellc/lcOpenMp.pyx":616
  * 
@@ -10188,6 +10220,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_lambda_2, __pyx_k_lambda_2, sizeof(__pyx_k_lambda_2), 0, 0, 1, 1},
   {&__pyx_n_s_lc, __pyx_k_lc, sizeof(__pyx_k_lc), 0, 0, 1, 1},
   {&__pyx_n_s_lcOpenMp, __pyx_k_lcOpenMp, sizeof(__pyx_k_lcOpenMp), 0, 0, 1, 1},
+  {&__pyx_kp_u_lcOpenMp_for_2, __pyx_k_lcOpenMp_for_2, sizeof(__pyx_k_lcOpenMp_for_2), 0, 1, 0, 0},
   {&__pyx_kp_u_lcOpenMp_line_38, __pyx_k_lcOpenMp_line_38, sizeof(__pyx_k_lcOpenMp_line_38), 0, 1, 0, 0},
   {&__pyx_kp_s_lcOpenMp_pyx, __pyx_k_lcOpenMp_pyx, sizeof(__pyx_k_lcOpenMp_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_lc_rv_flags, __pyx_k_lc_rv_flags, sizeof(__pyx_k_lc_rv_flags), 0, 0, 1, 1},
@@ -10208,6 +10241,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_lista, __pyx_k_lista, sizeof(__pyx_k_lista), 0, 0, 1, 1},
   {&__pyx_n_u_log, __pyx_k_log, sizeof(__pyx_k_log), 0, 1, 0, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
+  {&__pyx_kp_u_multi, __pyx_k_multi, sizeof(__pyx_k_multi), 0, 1, 0, 0},
   {&__pyx_n_s_n1, __pyx_k_n1, sizeof(__pyx_k_n1), 0, 0, 1, 1},
   {&__pyx_n_s_n2, __pyx_k_n2, sizeof(__pyx_k_n2), 0, 0, 1, 1},
   {&__pyx_n_s_n_int, __pyx_k_n_int, sizeof(__pyx_k_n_int), 0, 0, 1, 1},
@@ -10232,6 +10266,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_period, __pyx_k_period, sizeof(__pyx_k_period), 0, 0, 1, 1},
   {&__pyx_n_u_poly1p5, __pyx_k_poly1p5, sizeof(__pyx_k_poly1p5), 0, 1, 0, 1},
   {&__pyx_n_u_poly3p0, __pyx_k_poly3p0, sizeof(__pyx_k_poly3p0), 0, 1, 0, 1},
+  {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
   {&__pyx_n_s_q, __pyx_k_q, sizeof(__pyx_k_q), 0, 0, 1, 1},
   {&__pyx_n_u_quad, __pyx_k_quad, sizeof(__pyx_k_quad), 0, 1, 0, 1},
   {&__pyx_n_s_radius_1, __pyx_k_radius_1, sizeof(__pyx_k_radius_1), 0, 0, 1, 1},
@@ -10290,6 +10325,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 static int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 409, __pyx_L1_error)
   __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 541, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 613, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 823, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(1, 1013, __pyx_L1_error)
   return 0;

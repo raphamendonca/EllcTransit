@@ -1,0 +1,509 @@
+(EllcOpen) rhapy@rhapy:~/Projects/EllcOpen/EllcTransit$ python ellcUso.py
+a = 2.765 Rsun
+  lc     - for 2 :  0:00:03.672232 Sequencial
+lcOpenMp - for 2:  0:00:00.016112  - multi
+-------- 1000000 ---------
+  lc     - for 2 :  0:00:08.807487 Sequencial
+lcOpenMp - for 2:  0:00:00.030933  - multi
+-------- 2000000 ---------
+  lc     - for 2 :  0:00:11.262859 Sequencial
+lcOpenMp - for 2:  0:00:00.041110  - multi
+-------- 3000000 ---------
+  lc     - for 2 :  0:00:15.606116 Sequencial
+lcOpenMp - for 2:  0:00:00.052611  - multi
+-------- 4000000 ---------
+  lc     - for 2 :  0:00:24.669931 Sequencial
+lcOpenMp - for 2:  0:00:00.043367  - multi
+-------- 5000000 ---------
+  lc     - for 2 :  0:00:29.032471 Sequencial
+lcOpenMp - for 2:  0:00:00.057774  - multi
+-------- 6000000 ---------
+  lc     - for 2 :  0:00:29.504277 Sequencial
+lcOpenMp - for 2:  0:00:00.057995  - multi
+-------- 7000000 ---------
+  lc     - for 2 :  0:00:33.191882 Sequencial
+lcOpenMp - for 2:  0:00:00.072716  - multi
+-------- 8000000 ---------
+  lc     - for 2 :  0:00:33.750830 Sequencial
+lcOpenMp - for 2:  0:00:00.078525  - multi
+-------- 9000000 ---------
+  lc     - for 2 :  0:00:37.354489 Sequencial
+lcOpenMp - for 2:  0:00:00.089789  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:41.923745 Sequencial
+lcOpenMp - for 2:  0:00:00.094454  - multi
+-------- 11000000 ---------
+  lc     - for 2 :  0:00:45.733586 Sequencial
+lcOpenMp - for 2:  0:00:00.140497  - multi
+-------- 12000000 ---------
+  lc     - for 2 :  0:00:48.672134 Sequencial
+lcOpenMp - for 2:  0:00:00.117537  - multi
+-------- 13000000 ---------
+  lc     - for 2 :  0:00:52.433434 Sequencial
+lcOpenMp - for 2:  0:00:00.134205  - multi
+-------- 14000000 ---------
+  lc     - for 2 :  0:00:56.667462 Sequencial
+lcOpenMp - for 2:  0:00:00.137139  - multi
+-------- 15000000 ---------
+  lc     - for 2 :  0:00:59.807227 Sequencial
+lcOpenMp - for 2:  0:00:00.153189  - multi
+-------- 16000000 ---------
+  lc     - for 2 :  0:01:06.200883 Sequencial
+lcOpenMp - for 2:  0:00:00.208994  - multi
+-------- 17000000 ---------
+  lc     - for 2 :  0:01:11.082786 Sequencial
+lcOpenMp - for 2:  0:00:00.215204  - multi
+-------- 18000000 ---------
+  lc     - for 2 :  0:01:13.875185 Sequencial
+lcOpenMp - for 2:  0:00:00.174746  - multi
+-------- 19000000 ---------
+  lc     - for 2 :  0:01:15.383586 Sequencial
+lcOpenMp - for 2:  0:00:00.182080  - multi
+-------- 20000000 ---------
+  lc     - for 2 :  0:01:19.042486 Sequencial
+lcOpenMp - for 2:  0:00:00.179613  - multi
+-------- 21000000 ---------
+  lc     - for 2 :  0:01:23.076938 Sequencial
+lcOpenMp - for 2:  0:00:00.181548  - multi
+-------- 22000000 ---------
+  lc     - for 2 :  0:01:32.870130 Sequencial
+lcOpenMp - for 2:  0:00:00.228033  - multi
+-------- 23000000 ---------
+  lc     - for 2 :  0:01:35.550002 Sequencial
+lcOpenMp - for 2:  0:00:00.203154  - multi
+-------- 24000000 ---------
+  lc     - for 2 :  0:01:33.560672 Sequencial
+lcOpenMp - for 2:  0:00:00.223043  - multi
+-------- 25000000 ---------
+  lc     - for 2 :  0:01:38.570559 Sequencial
+lcOpenMp - for 2:  0:00:00.207386  - multi
+-------- 26000000 ---------
+  lc     - for 2 :  0:01:41.144255 Sequencial
+lcOpenMp - for 2:  0:00:00.233012  - multi
+-------- 27000000 ---------
+  lc     - for 2 :  0:01:51.684183 Sequencial
+lcOpenMp - for 2:  0:00:00.236293  - multi
+-------- 28000000 ---------
+  lc     - for 2 :  0:01:49.338071 Sequencial
+lcOpenMp - for 2:  0:00:00.247483  - multi
+-------- 29000000 ---------
+  lc     - for 2 :  0:01:52.403394 Sequencial
+lcOpenMp - for 2:  0:00:00.245819  - multi
+-------- 30000000 ---------
+[1000000, 1000000, 2000000, 2000000, 3000000, 3000000, 4000000, 4000000, 5000000, 5000000, 6000000, 6000000, 7000000, 7000000, 8000000, 8000000, 9000000, 9000000, 10000000, 10000000, 11000000, 11000000, 12000000, 12000000, 13000000, 13000000, 14000000, 14000000, 15000000, 15000000, 16000000, 16000000, 17000000, 17000000, 18000000, 18000000, 19000000, 19000000, 20000000, 20000000, 21000000, 21000000, 22000000, 22000000, 23000000, 23000000, 24000000, 24000000, 25000000, 25000000, 26000000, 26000000, 27000000, 27000000, 28000000, 28000000, 29000000, 29000000, 30000000, 30000000]
+[1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+[datetime.timedelta(0, 26, 847644), datetime.timedelta(0, 12, 779557), datetime.timedelta(0, 43, 700870), datetime.timedelta(0, 25, 702890), datetime.timedelta(0, 56, 607827), datetime.timedelta(0, 65, 98015), datetime.timedelta(0, 85, 351532), datetime.timedelta(0, 56, 118211), datetime.timedelta(0, 129, 472277), datetime.timedelta(0, 83, 769405), datetime.timedelta(0, 109, 581039), datetime.timedelta(0, 95, 109537), datetime.timedelta(0, 125, 946200), datetime.timedelta(0, 133, 165970), datetime.timedelta(0, 160, 121141), datetime.timedelta(0, 105, 72606), datetime.timedelta(0, 150, 586463), datetime.timedelta(0, 118, 439395), datetime.timedelta(0, 167, 633426), datetime.timedelta(0, 130, 572435), datetime.timedelta(0, 184, 553934), datetime.timedelta(0, 144, 732227), datetime.timedelta(0, 201, 560920), datetime.timedelta(0, 156, 169616), datetime.timedelta(0, 217, 481621), datetime.timedelta(0, 170, 336925), datetime.timedelta(0, 234,313761), datetime.timedelta(0, 181, 788818), datetime.timedelta(0, 252, 406431), datetime.timedelta(0, 195, 886964), datetime.timedelta(0, 268, 116526), datetime.timedelta(0, 210, 698160), datetime.timedelta(0, 290, 68788), datetime.timedelta(0, 228, 149466), datetime.timedelta(0, 310, 816363), datetime.timedelta(0, 237, 323816), datetime.timedelta(0, 326, 418835), datetime.timedelta(0, 247, 960689), datetime.timedelta(0, 338, 33926), datetime.timedelta(0, 259, 966030), datetime.timedelta(0, 352, 850457), datetime.timedelta(0, 272, 700227), datetime.timedelta(0, 372, 721864), datetime.timedelta(0, 285, 844476), datetime.timedelta(0, 391, 901398), datetime.timedelta(0, 304, 857912), datetime.timedelta(0, 414, 757500), datetime.timedelta(0, 311, 970067), datetime.timedelta(0, 421, 1305), datetime.timedelta(0, 327, 467065),datetime.timedelta(0, 437, 227485), datetime.timedelta(0, 336, 994668), datetime.timedelta(0, 454, 879788), datetime.timedelta(0, 350, 115071), datetime.timedelta(0, 478, 742058), datetime.timedelta(0, 377, 980986), datetime.timedelta(0,490, 574391), datetime.timedelta(0, 379, 252057), datetime.timedelta(0, 506, 109377), datetime.timedelta(0, 391, 808684)]
+output-2017-10-30 15:47:15.622894.xlsx
+           Duração    Pontos  Processos
+0  00:00:26.847644   1000000          1
+1  00:00:12.779557   1000000          2
+2  00:00:43.700870   2000000          1
+3  00:00:25.702890   2000000          2
+4  00:00:56.607827   3000000          1
+5  00:01:05.098015   3000000          2
+6  00:01:25.351532   4000000          1
+7  00:00:56.118211   4000000          2
+8  00:02:09.472277   5000000          1
+9  00:01:23.769405   5000000          2
+10 00:01:49.581039   6000000          1
+11 00:01:35.109537   6000000          2
+12 00:02:05.946200   7000000          1
+13 00:02:13.165970   7000000          2
+14 00:02:40.121141   8000000          1
+15 00:01:45.072606   8000000          2
+16 00:02:30.586463   9000000          1
+17 00:01:58.439395   9000000          2
+18 00:02:47.633426  10000000          1
+19 00:02:10.572435  10000000          2
+20 00:03:04.553934  11000000          1
+21 00:02:24.732227  11000000          2
+22 00:03:21.560920  12000000          1
+23 00:02:36.169616  12000000          2
+24 00:03:37.481621  13000000          1
+25 00:02:50.336925  13000000          2
+26 00:03:54.313761  14000000          1
+27 00:03:01.788818  14000000          2
+28 00:04:12.406431  15000000          1
+29 00:03:15.886964  15000000          2
+30 00:04:28.116526  16000000          1
+31 00:03:30.698160  16000000          2
+32 00:04:50.068788  17000000          1
+33 00:03:48.149466  17000000          2
+34 00:05:10.816363  18000000          1
+35 00:03:57.323816  18000000          2
+36 00:05:26.418835  19000000          1
+37 00:04:07.960689  19000000          2
+38 00:05:38.033926  20000000          1
+39 00:04:19.966030  20000000          2
+40 00:05:52.850457  21000000          1
+41 00:04:32.700227  21000000          2
+42 00:06:12.721864  22000000          1
+43 00:04:45.844476  22000000          2
+44 00:06:31.901398  23000000          1
+45 00:05:04.857912  23000000          2
+46 00:06:54.757500  24000000          1
+47 00:05:11.970067  24000000          2
+48 00:07:01.001305  25000000          1
+49 00:05:27.467065  25000000          2
+50 00:07:17.227485  26000000          1
+51 00:05:36.994668  26000000          2
+52 00:07:34.879788  27000000          1
+53 00:05:50.115071  27000000          2
+54 00:07:58.742058  28000000          1
+55 00:06:17.980986  28000000          2
+56 00:08:10.574391  29000000          1
+57 00:06:19.252057  29000000          2
+58 00:08:26.109377  30000000          1
+59 00:06:31.808684  30000000          2
+  lc     - for 2 :  0:00:03.725883 Sequencial
+lcOpenMp - for 2:  0:00:00.012477  - multi
+-------- 1000000 ---------
+  lc     - for 2 :  0:00:07.459037 Sequencial
+lcOpenMp - for 2:  0:00:00.023759  - multi
+-------- 2000000 ---------
+  lc     - for 2 :  0:00:11.565718 Sequencial
+lcOpenMp - for 2:  0:00:00.026697  - multi
+-------- 3000000 ---------
+  lc     - for 2 :  0:00:14.997262 Sequencial
+lcOpenMp - for 2:  0:00:00.032370  - multi
+-------- 4000000 ---------
+  lc     - for 2 :  0:00:18.682968 Sequencial
+lcOpenMp - for 2:  0:00:00.055512  - multi
+-------- 5000000 ---------
+  lc     - for 2 :  0:00:22.850784 Sequencial
+lcOpenMp - for 2:  0:00:00.050574  - multi
+-------- 6000000 ---------
+  lc     - for 2 :  0:00:26.285682 Sequencial
+lcOpenMp - for 2:  0:00:00.059341  - multi
+-------- 7000000 ---------
+  lc     - for 2 :  0:00:30.141087 Sequencial
+lcOpenMp - for 2:  0:00:00.067138  - multi
+-------- 8000000 ---------
+  lc     - for 2 :  0:00:33.237494 Sequencial
+lcOpenMp - for 2:  0:00:00.073286  - multi
+-------- 9000000 ---------
+  lc     - for 2 :  0:00:39.519721 Sequencial
+lcOpenMp - for 2:  0:00:00.084895  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:43.292803 Sequencial
+lcOpenMp - for 2:  0:00:00.093052  - multi
+-------- 11000000 ---------
+  lc     - for 2 :  0:00:47.754303 Sequencial
+lcOpenMp - for 2:  0:00:00.101737  - multi
+-------- 12000000 ---------
+  lc     - for 2 :  0:00:53.951912 Sequencial
+lcOpenMp - for 2:  0:00:00.118383  - multi
+-------- 13000000 ---------
+  lc     - for 2 :  0:00:52.858253 Sequencial
+lcOpenMp - for 2:  0:00:00.114467  - multi
+-------- 14000000 ---------
+  lc     - for 2 :  0:00:55.700622 Sequencial
+lcOpenMp - for 2:  0:00:00.176872  - multi
+-------- 15000000 ---------
+  lc     - for 2 :  0:00:59.849571 Sequencial
+lcOpenMp - for 2:  0:00:00.187004  - multi
+-------- 16000000 ---------
+  lc     - for 2 :  0:01:02.885297 Sequencial
+lcOpenMp - for 2:  0:00:00.174297  - multi
+-------- 17000000 ---------
+  lc     - for 2 :  0:01:07.619677 Sequencial
+lcOpenMp - for 2:  0:00:00.145925  - multi
+-------- 18000000 ---------
+  lc     - for 2 :  0:01:12.098921 Sequencial
+lcOpenMp - for 2:  0:00:00.153277  - multi
+-------- 19000000 ---------
+  lc     - for 2 :  0:01:15.933478 Sequencial
+lcOpenMp - for 2:  0:00:00.159294  - multi
+-------- 20000000 ---------
+  lc     - for 2 :  0:01:20.530715 Sequencial
+lcOpenMp - for 2:  0:00:00.197700  - multi
+-------- 21000000 ---------
+  lc     - for 2 :  0:01:29.219554 Sequencial
+lcOpenMp - for 2:  0:00:00.175963  - multi
+-------- 22000000 ---------
+  lc     - for 2 :  0:01:35.987670 Sequencial
+lcOpenMp - for 2:  0:00:00.185851  - multi
+-------- 23000000 ---------
+  lc     - for 2 :  0:01:31.388132 Sequencial
+lcOpenMp - for 2:  0:00:00.191976  - multi
+-------- 24000000 ---------
+  lc     - for 2 :  0:01:40.364723 Sequencial
+lcOpenMp - for 2:  0:00:00.290573  - multi
+-------- 25000000 ---------
+  lc     - for 2 :  0:01:42.024995 Sequencial
+lcOpenMp - for 2:  0:00:00.216223  - multi
+-------- 26000000 ---------
+  lc     - for 2 :  0:01:45.437529 Sequencial
+lcOpenMp - for 2:  0:00:00.214423  - multi
+-------- 27000000 ---------
+  lc     - for 2 :  0:01:44.905685 Sequencial
+lcOpenMp - for 2:  0:00:00.219754  - multi
+-------- 28000000 ---------
+  lc     - for 2 :  0:01:53.690922 Sequencial
+lcOpenMp - for 2:  0:00:00.241739  - multi
+-------- 29000000 ---------
+  lc     - for 2 :  0:01:54.174092 Sequencial
+lcOpenMp - for 2:  0:00:00.301127  - multi
+-------- 30000000 ---------
+[1000000, 1000000, 2000000, 2000000, 3000000, 3000000, 4000000, 4000000, 5000000, 5000000, 6000000, 6000000, 7000000, 7000000, 8000000, 8000000, 9000000, 9000000, 10000000, 10000000, 11000000, 11000000, 12000000, 12000000, 13000000, 13000000, 14000000, 14000000, 15000000, 15000000, 16000000, 16000000, 17000000, 17000000, 18000000, 18000000, 19000000, 19000000, 20000000, 20000000, 21000000, 21000000, 22000000, 22000000, 23000000, 23000000, 24000000, 24000000, 25000000, 25000000, 26000000, 26000000, 27000000, 27000000, 28000000, 28000000, 29000000, 29000000, 30000000, 30000000, 1000000, 1000000, 2000000, 2000000, 3000000, 3000000, 4000000, 4000000, 5000000, 5000000, 6000000, 6000000, 7000000, 7000000, 8000000, 8000000, 9000000, 9000000, 10000000, 10000000, 11000000, 11000000, 12000000, 12000000, 13000000, 13000000, 14000000, 14000000, 15000000, 15000000, 16000000, 16000000, 17000000, 17000000, 18000000, 18000000, 19000000, 19000000, 20000000, 20000000, 21000000, 21000000, 22000000, 22000000, 23000000, 23000000, 24000000, 24000000, 25000000, 25000000, 26000000, 26000000, 27000000, 27000000, 28000000, 28000000, 29000000, 29000000, 30000000, 30000000]
+[1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+[datetime.timedelta(0, 26, 847644), datetime.timedelta(0, 12, 779557), datetime.timedelta(0, 43, 700870), datetime.timedelta(0, 25, 702890), datetime.timedelta(0, 56, 607827), datetime.timedelta(0, 65, 98015), datetime.timedelta(0, 85, 351532), datetime.timedelta(0, 56, 118211), datetime.timedelta(0, 129, 472277), datetime.timedelta(0, 83, 769405), datetime.timedelta(0, 109, 581039), datetime.timedelta(0, 95, 109537), datetime.timedelta(0, 125, 946200), datetime.timedelta(0, 133, 165970), datetime.timedelta(0, 160, 121141), datetime.timedelta(0, 105, 72606), datetime.timedelta(0, 150, 586463), datetime.timedelta(0, 118, 439395), datetime.timedelta(0, 167, 633426), datetime.timedelta(0, 130, 572435), datetime.timedelta(0, 184, 553934), datetime.timedelta(0, 144, 732227), datetime.timedelta(0, 201, 560920), datetime.timedelta(0, 156, 169616), datetime.timedelta(0, 217, 481621), datetime.timedelta(0, 170, 336925), datetime.timedelta(0, 234,313761), datetime.timedelta(0, 181, 788818), datetime.timedelta(0, 252, 406431), datetime.timedelta(0, 195, 886964), datetime.timedelta(0, 268, 116526), datetime.timedelta(0, 210, 698160), datetime.timedelta(0, 290, 68788), datetime.timedelta(0, 228, 149466), datetime.timedelta(0, 310, 816363), datetime.timedelta(0, 237, 323816), datetime.timedelta(0, 326, 418835), datetime.timedelta(0, 247, 960689), datetime.timedelta(0, 338, 33926), datetime.timedelta(0, 259, 966030), datetime.timedelta(0, 352, 850457), datetime.timedelta(0, 272, 700227), datetime.timedelta(0, 372, 721864), datetime.timedelta(0, 285, 844476), datetime.timedelta(0, 391, 901398), datetime.timedelta(0, 304, 857912), datetime.timedelta(0, 414, 757500), datetime.timedelta(0, 311, 970067), datetime.timedelta(0, 421, 1305), datetime.timedelta(0, 327, 467065),datetime.timedelta(0, 437, 227485), datetime.timedelta(0, 336, 994668), datetime.timedelta(0, 454, 879788), datetime.timedelta(0, 350, 115071), datetime.timedelta(0, 478, 742058), datetime.timedelta(0, 377, 980986), datetime.timedelta(0,490, 574391), datetime.timedelta(0, 379, 252057), datetime.timedelta(0, 506, 109377), datetime.timedelta(0, 391, 808684), datetime.timedelta(0, 16, 692797), datetime.timedelta(0, 12, 988506), datetime.timedelta(0, 33, 783146), datetime.timedelta(0, 25, 793926), datetime.timedelta(0, 50, 860471), datetime.timedelta(0, 38, 746705), datetime.timedelta(0, 67, 118959), datetime.timedelta(0, 51, 622748), datetime.timedelta(0, 83, 879522), datetime.timedelta(0, 66, 820420), datetime.timedelta(0, 102, 558658), datetime.timedelta(0, 78, 660701), datetime.timedelta(0, 117, 609875), datetime.timedelta(0, 91, 339064), datetime.timedelta(0, 134, 453167), datetime.timedelta(0, 104, 740889), datetime.timedelta(0, 150, 103260), datetime.timedelta(0, 119, 236249), datetime.timedelta(0, 171, 174193), datetime.timedelta(0, 129, 700270), datetime.timedelta(0, 187, 780393), datetime.timedelta(0, 148, 365945), datetime.timedelta(0, 208, 903941), datetime.timedelta(0, 161, 517902), datetime.timedelta(0, 227, 307463), datetime.timedelta(0, 171, 213462), datetime.timedelta(0, 237, 476196), datetime.timedelta(0, 182, 187544), datetime.timedelta(0, 252, 219198), datetime.timedelta(0, 195, 282669),datetime.timedelta(0, 268, 136575), datetime.timedelta(0, 209, 325904), datetime.timedelta(0, 286, 874597), datetime.timedelta(0, 221, 449536), datetime.timedelta(0, 302, 405617), datetime.timedelta(0, 234, 258965), datetime.timedelta(0,322, 164355), datetime.timedelta(0, 248, 432519), datetime.timedelta(0, 336, 282704), datetime.timedelta(0, 261, 670889), datetime.timedelta(0, 358, 761962), datetime.timedelta(0, 275, 436531), datetime.timedelta(0, 376, 864701), datetime.timedelta(0, 292, 160324), datetime.timedelta(0, 413, 246985), datetime.timedelta(0, 306, 626388), datetime.timedelta(0, 405, 782087), datetime.timedelta(0, 315, 163611), datetime.timedelta(0, 432, 585565), datetime.timedelta(0, 332, 809986), datetime.timedelta(0, 438, 160311), datetime.timedelta(0, 339, 618812), datetime.timedelta(0, 456, 129035), datetime.timedelta(0, 350, 772823), datetime.timedelta(0, 471, 935739), datetime.timedelta(0, 365, 83461), datetime.timedelta(0, 489, 969044), datetime.timedelta(0, 378, 758629), datetime.timedelta(0, 504, 741175), datetime.timedelta(0, 400, 390364)]
+output-2017-10-30 19:40:51.922930.xlsx
+            Duração    Pontos  Processos
+0   00:00:26.847644   1000000          1
+1   00:00:12.779557   1000000          2
+2   00:00:43.700870   2000000          1
+3   00:00:25.702890   2000000          2
+4   00:00:56.607827   3000000          1
+5   00:01:05.098015   3000000          2
+6   00:01:25.351532   4000000          1
+7   00:00:56.118211   4000000          2
+8   00:02:09.472277   5000000          1
+9   00:01:23.769405   5000000          2
+10  00:01:49.581039   6000000          1
+11  00:01:35.109537   6000000          2
+12  00:02:05.946200   7000000          1
+13  00:02:13.165970   7000000          2
+14  00:02:40.121141   8000000          1
+15  00:01:45.072606   8000000          2
+16  00:02:30.586463   9000000          1
+17  00:01:58.439395   9000000          2
+18  00:02:47.633426  10000000          1
+19  00:02:10.572435  10000000          2
+20  00:03:04.553934  11000000          1
+21  00:02:24.732227  11000000          2
+22  00:03:21.560920  12000000          1
+23  00:02:36.169616  12000000          2
+24  00:03:37.481621  13000000          1
+25  00:02:50.336925  13000000          2
+26  00:03:54.313761  14000000          1
+27  00:03:01.788818  14000000          2
+28  00:04:12.406431  15000000          1
+29  00:03:15.886964  15000000          2
+..              ...       ...        ...
+90  00:04:28.136575  16000000          1
+91  00:03:29.325904  16000000          2
+92  00:04:46.874597  17000000          1
+93  00:03:41.449536  17000000          2
+94  00:05:02.405617  18000000          1
+95  00:03:54.258965  18000000          2
+96  00:05:22.164355  19000000          1
+97  00:04:08.432519  19000000          2
+98  00:05:36.282704  20000000          1
+99  00:04:21.670889  20000000          2
+100 00:05:58.761962  21000000          1
+101 00:04:35.436531  21000000          2
+102 00:06:16.864701  22000000          1
+103 00:04:52.160324  22000000          2
+104 00:06:53.246985  23000000          1
+105 00:05:06.626388  23000000          2
+106 00:06:45.782087  24000000          1
+107 00:05:15.163611  24000000          2
+108 00:07:12.585565  25000000          1
+109 00:05:32.809986  25000000          2
+110 00:07:18.160311  26000000          1
+111 00:05:39.618812  26000000          2
+112 00:07:36.129035  27000000          1
+113 00:05:50.772823  27000000          2
+114 00:07:51.935739  28000000          1
+115 00:06:05.083461  28000000          2
+116 00:08:09.969044  29000000          1
+117 00:06:18.758629  29000000          2
+118 00:08:24.741175  30000000          1
+119 00:06:40.390364  30000000          2
+
+[120 rows x 3 columns]
+  lc     - for 2 :  0:00:03.791027 Sequencial
+lcOpenMp - for 2:  0:00:00.008968  - multi
+-------- 1000000 ---------
+  lc     - for 2 :  0:00:08.018913 Sequencial
+lcOpenMp - for 2:  0:00:00.017910  - multi
+-------- 2000000 ---------
+  lc     - for 2 :  0:00:11.671996 Sequencial
+lcOpenMp - for 2:  0:00:00.026133  - multi
+-------- 3000000 ---------
+  lc     - for 2 :  0:00:17.191497 Sequencial
+lcOpenMp - for 2:  0:00:00.033020  - multi
+-------- 4000000 ---------
+  lc     - for 2 :  0:00:19.638917 Sequencial
+lcOpenMp - for 2:  0:00:00.060889  - multi
+-------- 5000000 ---------
+  lc     - for 2 :  0:00:23.090204 Sequencial
+lcOpenMp - for 2:  0:00:00.068104  - multi
+-------- 6000000 ---------
+  lc     - for 2 :  0:00:26.838159 Sequencial
+lcOpenMp - for 2:  0:00:00.055684  - multi
+-------- 7000000 ---------
+  lc     - for 2 :  0:00:29.785185 Sequencial
+lcOpenMp - for 2:  0:00:00.067132  - multi
+-------- 8000000 ---------
+  lc     - for 2 :  0:00:35.242460 Sequencial
+lcOpenMp - for 2:  0:00:00.074351  - multi
+-------- 9000000 ---------
+  lc     - for 2 :  0:00:37.044249 Sequencial
+lcOpenMp - for 2:  0:00:00.079482  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:40.550219 Sequencial
+lcOpenMp - for 2:  0:00:00.088104  - multi
+-------- 11000000 ---------
+  lc     - for 2 :  0:00:44.587057 Sequencial
+lcOpenMp - for 2:  0:00:00.115805  - multi
+-------- 12000000 ---------
+  lc     - for 2 :  0:00:48.130705 Sequencial
+lcOpenMp - for 2:  0:00:00.103777  - multi
+-------- 13000000 ---------
+  lc     - for 2 :  0:00:51.573193 Sequencial
+lcOpenMp - for 2:  0:00:00.114856  - multi
+-------- 14000000 ---------
+  lc     - for 2 :  0:00:55.302510 Sequencial
+lcOpenMp - for 2:  0:00:00.147937  - multi
+-------- 15000000 ---------
+  lc     - for 2 :  0:00:58.801561 Sequencial
+lcOpenMp - for 2:  0:00:00.124814  - multi
+-------- 16000000 ---------
+  lc     - for 2 :  0:01:02.514358 Sequencial
+lcOpenMp - for 2:  0:00:00.132212  - multi
+-------- 17000000 ---------
+  lc     - for 2 :  0:01:09.002457 Sequencial
+lcOpenMp - for 2:  0:00:00.138735  - multi
+-------- 18000000 ---------
+  lc     - for 2 :  0:01:10.046792 Sequencial
+lcOpenMp - for 2:  0:00:00.160222  - multi
+-------- 19000000 ---------
+  lc     - for 2 :  0:01:14.259946 Sequencial
+lcOpenMp - for 2:  0:00:00.161123  - multi
+-------- 20000000 ---------
+  lc     - for 2 :  0:01:18.064076 Sequencial
+lcOpenMp - for 2:  0:00:00.171991  - multi
+-------- 21000000 ---------
+  lc     - for 2 :  0:01:21.215710 Sequencial
+lcOpenMp - for 2:  0:00:00.194036  - multi
+-------- 22000000 ---------
+  lc     - for 2 :  0:01:24.759403 Sequencial
+lcOpenMp - for 2:  0:00:00.177405  - multi
+-------- 23000000 ---------
+  lc     - for 2 :  0:01:32.338349 Sequencial
+lcOpenMp - for 2:  0:00:00.210423  - multi
+-------- 24000000 ---------
+  lc     - for 2 :  0:01:32.258048 Sequencial
+lcOpenMp - for 2:  0:00:00.255762  - multi
+-------- 25000000 ---------
+  lc     - for 2 :  0:01:35.889587 Sequencial
+lcOpenMp - for 2:  0:00:00.234770  - multi
+-------- 26000000 ---------
+  lc     - for 2 :  0:01:39.926516 Sequencial
+lcOpenMp - for 2:  0:00:00.231575  - multi
+-------- 27000000 ---------
+  lc     - for 2 :  0:01:42.955499 Sequencial
+lcOpenMp - for 2:  0:00:00.230984  - multi
+-------- 28000000 ---------
+  lc     - for 2 :  0:01:46.166229 Sequencial
+lcOpenMp - for 2:  0:00:00.282142  - multi
+-------- 29000000 ---------
+  lc     - for 2 :  0:01:49.793129 Sequencial
+lcOpenMp - for 2:  0:00:00.229352  - multi
+-------- 30000000 ---------
+[1000000, 1000000, 2000000, 2000000, 3000000, 3000000, 4000000, 4000000, 5000000, 5000000, 6000000, 6000000, 7000000, 7000000, 8000000, 8000000, 9000000, 9000000, 10000000, 10000000, 11000000, 11000000, 12000000, 12000000, 13000000, 13000000, 14000000, 14000000, 15000000, 15000000, 16000000, 16000000, 17000000, 17000000, 18000000, 18000000, 19000000, 19000000, 20000000, 20000000, 21000000, 21000000, 22000000, 22000000, 23000000, 23000000, 24000000, 24000000, 25000000, 25000000, 26000000, 26000000, 27000000, 27000000, 28000000, 28000000, 29000000, 29000000, 30000000, 30000000, 1000000, 1000000, 2000000, 2000000, 3000000, 3000000, 4000000, 4000000, 5000000, 5000000, 6000000, 6000000, 7000000, 7000000, 8000000, 8000000, 9000000, 9000000, 10000000, 10000000, 11000000, 11000000, 12000000, 12000000, 13000000, 13000000, 14000000, 14000000, 15000000, 15000000, 16000000, 16000000, 17000000, 17000000, 18000000, 18000000, 19000000, 19000000, 20000000, 20000000, 21000000, 21000000, 22000000, 22000000, 23000000, 23000000, 24000000, 24000000, 25000000, 25000000, 26000000, 26000000, 27000000, 27000000, 28000000, 28000000, 29000000, 29000000, 30000000, 30000000, 1000000, 1000000, 2000000, 2000000, 3000000, 3000000, 4000000, 4000000, 5000000, 5000000, 6000000, 6000000, 7000000, 7000000, 8000000, 8000000,9000000, 9000000, 10000000, 10000000, 11000000, 11000000, 12000000, 12000000, 13000000, 13000000, 14000000, 14000000, 15000000, 15000000, 16000000, 16000000, 17000000, 17000000, 18000000, 18000000, 19000000, 19000000, 20000000, 20000000,21000000, 21000000, 22000000, 22000000, 23000000, 23000000, 24000000, 24000000, 25000000, 25000000, 26000000, 26000000, 27000000, 27000000, 28000000, 28000000, 29000000, 29000000, 30000000, 30000000]
+[1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+[datetime.timedelta(0, 26, 847644), datetime.timedelta(0, 12, 779557), datetime.timedelta(0, 43, 700870), datetime.timedelta(0, 25, 702890), datetime.timedelta(0, 56, 607827), datetime.timedelta(0, 65, 98015), datetime.timedelta(0, 85, 351532), datetime.timedelta(0, 56, 118211), datetime.timedelta(0, 129, 472277), datetime.timedelta(0, 83, 769405), datetime.timedelta(0, 109, 581039), datetime.timedelta(0, 95, 109537), datetime.timedelta(0, 125, 946200), datetime.timedelta(0, 133, 165970), datetime.timedelta(0, 160, 121141), datetime.timedelta(0, 105, 72606), datetime.timedelta(0, 150, 586463), datetime.timedelta(0, 118, 439395), datetime.timedelta(0, 167, 633426), datetime.timedelta(0, 130, 572435), datetime.timedelta(0, 184, 553934), datetime.timedelta(0, 144, 732227), datetime.timedelta(0, 201, 560920), datetime.timedelta(0, 156, 169616), datetime.timedelta(0, 217, 481621), datetime.timedelta(0, 170, 336925), datetime.timedelta(0, 234,313761), datetime.timedelta(0, 181, 788818), datetime.timedelta(0, 252, 406431), datetime.timedelta(0, 195, 886964), datetime.timedelta(0, 268, 116526), datetime.timedelta(0, 210, 698160), datetime.timedelta(0, 290, 68788), datetime.timedelta(0, 228, 149466), datetime.timedelta(0, 310, 816363), datetime.timedelta(0, 237, 323816), datetime.timedelta(0, 326, 418835), datetime.timedelta(0, 247, 960689), datetime.timedelta(0, 338, 33926), datetime.timedelta(0, 259, 966030), datetime.timedelta(0, 352, 850457), datetime.timedelta(0, 272, 700227), datetime.timedelta(0, 372, 721864), datetime.timedelta(0, 285, 844476), datetime.timedelta(0, 391, 901398), datetime.timedelta(0, 304, 857912), datetime.timedelta(0, 414, 757500), datetime.timedelta(0, 311, 970067), datetime.timedelta(0, 421, 1305), datetime.timedelta(0, 327, 467065),datetime.timedelta(0, 437, 227485), datetime.timedelta(0, 336, 994668), datetime.timedelta(0, 454, 879788), datetime.timedelta(0, 350, 115071), datetime.timedelta(0, 478, 742058), datetime.timedelta(0, 377, 980986), datetime.timedelta(0,490, 574391), datetime.timedelta(0, 379, 252057), datetime.timedelta(0, 506, 109377), datetime.timedelta(0, 391, 808684), datetime.timedelta(0, 16, 692797), datetime.timedelta(0, 12, 988506), datetime.timedelta(0, 33, 783146), datetime.timedelta(0, 25, 793926), datetime.timedelta(0, 50, 860471), datetime.timedelta(0, 38, 746705), datetime.timedelta(0, 67, 118959), datetime.timedelta(0, 51, 622748), datetime.timedelta(0, 83, 879522), datetime.timedelta(0, 66, 820420), datetime.timedelta(0, 102, 558658), datetime.timedelta(0, 78, 660701), datetime.timedelta(0, 117, 609875), datetime.timedelta(0, 91, 339064), datetime.timedelta(0, 134, 453167), datetime.timedelta(0, 104, 740889), datetime.timedelta(0, 150, 103260), datetime.timedelta(0, 119, 236249), datetime.timedelta(0, 171, 174193), datetime.timedelta(0, 129, 700270), datetime.timedelta(0, 187, 780393), datetime.timedelta(0, 148, 365945), datetime.timedelta(0, 208, 903941), datetime.timedelta(0, 161, 517902), datetime.timedelta(0, 227, 307463), datetime.timedelta(0, 171, 213462), datetime.timedelta(0, 237, 476196), datetime.timedelta(0, 182, 187544), datetime.timedelta(0, 252, 219198), datetime.timedelta(0, 195, 282669),datetime.timedelta(0, 268, 136575), datetime.timedelta(0, 209, 325904), datetime.timedelta(0, 286, 874597), datetime.timedelta(0, 221, 449536), datetime.timedelta(0, 302, 405617), datetime.timedelta(0, 234, 258965), datetime.timedelta(0,322, 164355), datetime.timedelta(0, 248, 432519), datetime.timedelta(0, 336, 282704), datetime.timedelta(0, 261, 670889), datetime.timedelta(0, 358, 761962), datetime.timedelta(0, 275, 436531), datetime.timedelta(0, 376, 864701), datetime.timedelta(0, 292, 160324), datetime.timedelta(0, 413, 246985), datetime.timedelta(0, 306, 626388), datetime.timedelta(0, 405, 782087), datetime.timedelta(0, 315, 163611), datetime.timedelta(0, 432, 585565), datetime.timedelta(0, 332, 809986), datetime.timedelta(0, 438, 160311), datetime.timedelta(0, 339, 618812), datetime.timedelta(0, 456, 129035), datetime.timedelta(0, 350, 772823), datetime.timedelta(0, 471, 935739), datetime.timedelta(0, 365, 83461), datetime.timedelta(0, 489, 969044), datetime.timedelta(0, 378, 758629), datetime.timedelta(0, 504, 741175), datetime.timedelta(0, 400, 390364), datetime.timedelta(0, 16, 974140), datetime.timedelta(0, 13, 209068), datetime.timedelta(0, 34, 345579), datetime.timedelta(0, 26, 719276), datetime.timedelta(0, 51, 63862), datetime.timedelta(0, 40, 62821), datetime.timedelta(0,70, 245822), datetime.timedelta(0, 52, 985384), datetime.timedelta(0, 85, 966811), datetime.timedelta(0, 66, 765538), datetime.timedelta(0, 103, 49357), datetime.timedelta(0, 77, 335751), datetime.timedelta(0, 117, 413575), datetime.timedelta(0, 90, 640704), datetime.timedelta(0, 133, 576361), datetime.timedelta(0, 103, 352237), datetime.timedelta(0, 153, 740404), datetime.timedelta(0, 116, 64299), datetime.timedelta(0, 165, 174886), datetime.timedelta(0, 128, 557746), datetime.timedelta(0, 181, 305998), datetime.timedelta(0, 140, 796802), datetime.timedelta(0, 198, 337017), datetime.timedelta(0, 154, 627523), datetime.timedelta(0, 215, 564059), datetime.timedelta(0, 166, 494322), datetime.timedelta(0, 231, 204397), datetime.timedelta(0, 179, 219976), datetime.timedelta(0, 247, 727680), datetime.timedelta(0, 193, 157500), datetime.timedelta(0, 265, 670013), datetime.timedelta(0, 205, 895485), datetime.timedelta(0, 281, 342419), datetime.timedelta(0, 218, 910109), datetime.timedelta(0, 300, 506718), datetime.timedelta(0, 231, 634473), datetime.timedelta(0, 314, 301780), datetime.timedelta(0, 244, 149373), datetime.timedelta(0, 330, 372698), datetime.timedelta(0, 260, 205854), datetime.timedelta(0, 347, 420515), datetime.timedelta(0, 269, 51453), datetime.timedelta(0, 363, 959020), datetime.timedelta(0, 284, 745611), datetime.timedelta(0, 380, 349296), datetime.timedelta(0, 295, 644094), datetime.timedelta(0, 400, 618270), datetime.timedelta(0, 309, 726445), datetime.timedelta(0, 414, 780852), datetime.timedelta(0, 322, 821022), datetime.timedelta(0, 431, 684910), datetime.timedelta(0, 334, 969416), datetime.timedelta(0, 447, 943224), datetime.timedelta(0, 352, 790821), datetime.timedelta(0, 462, 424426), datetime.timedelta(0, 358, 734926), datetime.timedelta(0, 481, 256513), datetime.timedelta(0, 372, 353436), datetime.timedelta(0, 492, 776559), datetime.timedelta(0, 385,832609)]
+output-2017-10-30 23:29:30.669162.xlsx
+            Duração    Pontos  Processos
+0   00:00:26.847644   1000000          1
+1   00:00:12.779557   1000000          2
+2   00:00:43.700870   2000000          1
+3   00:00:25.702890   2000000          2
+4   00:00:56.607827   3000000          1
+5   00:01:05.098015   3000000          2
+6   00:01:25.351532   4000000          1
+7   00:00:56.118211   4000000          2
+8   00:02:09.472277   5000000          1
+9   00:01:23.769405   5000000          2
+10  00:01:49.581039   6000000          1
+11  00:01:35.109537   6000000          2
+12  00:02:05.946200   7000000          1
+13  00:02:13.165970   7000000          2
+14  00:02:40.121141   8000000          1
+15  00:01:45.072606   8000000          2
+16  00:02:30.586463   9000000          1
+17  00:01:58.439395   9000000          2
+18  00:02:47.633426  10000000          1
+19  00:02:10.572435  10000000          2
+20  00:03:04.553934  11000000          1
+21  00:02:24.732227  11000000          2
+22  00:03:21.560920  12000000          1
+23  00:02:36.169616  12000000          2
+24  00:03:37.481621  13000000          1
+25  00:02:50.336925  13000000          2
+26  00:03:54.313761  14000000          1
+27  00:03:01.788818  14000000          2
+28  00:04:12.406431  15000000          1
+29  00:03:15.886964  15000000          2
+..              ...       ...        ...
+150 00:04:25.670013  16000000          1
+151 00:03:25.895485  16000000          2
+152 00:04:41.342419  17000000          1
+153 00:03:38.910109  17000000          2
+154 00:05:00.506718  18000000          1
+155 00:03:51.634473  18000000          2
+156 00:05:14.301780  19000000          1
+157 00:04:04.149373  19000000          2
+158 00:05:30.372698  20000000          1
+159 00:04:20.205854  20000000          2
+160 00:05:47.420515  21000000          1
+161 00:04:29.051453  21000000          2
+162 00:06:03.959020  22000000          1
+163 00:04:44.745611  22000000          2
+164 00:06:20.349296  23000000          1
+165 00:04:55.644094  23000000          2
+166 00:06:40.618270  24000000          1
+167 00:05:09.726445  24000000          2
+168 00:06:54.780852  25000000          1
+169 00:05:22.821022  25000000          2
+170 00:07:11.684910  26000000          1
+171 00:05:34.969416  26000000          2
+172 00:07:27.943224  27000000          1
+173 00:05:52.790821  27000000          2
+174 00:07:42.424426  28000000          1
+175 00:05:58.734926  28000000          2
+176 00:08:01.256513  29000000          1
+177 00:06:12.353436  29000000          2
+178 00:08:12.776559  30000000          1
+179 00:06:25.832609  30000000          2
+
+[180 rows x 3 columns]
+  lc     - for 2 :  0:00:03.712314 Sequencial
+lcOpenMp - for 2:  0:00:00.011659  - multi
+-------- 1000000 ---------
+  lc     - for 2 :  0:00:07.300054 Sequencial
+lcOpenMp - for 2:  0:00:00.019567  - multi
+-------- 2000000 ---------
+  lc     - for 2 :  0:00:10.991052 Sequencial
+lcOpenMp - for 2:  0:00:00.024263  - multi
+-------- 3000000 ---------
+  lc     - for 2 :  0:00:14.725888 Sequencial
+lcOpenMp - for 2:  0:00:00.031830  - multi
+-------- 4000000 ---------
+  lc     - for 2 :  0:00:18.523041 Sequencial
+lcOpenMp - for 2:  0:00:00.040058  - multi
+-------- 5000000 ---------
+  lc     - for 2 :  0:00:22.008907 Sequencial
+lcOpenMp - for 2:  0:00:00.051356  - multi
+-------- 6000000 ---------
+  lc     - for 2 :  0:00:25.613766 Sequencial
+lcOpenMp - for 2:  0:00:00.065723  - multi
+-------- 7000000 ---------
+  lc     - for 2 :  0:00:29.945703 Sequencial
+lcOpenMp - for 2:  0:00:00.068278  - multi
+-------- 8000000 ---------
+  lc     - for 2 :  0:00:33.231869 Sequencial
+lcOpenMp - for 2:  0:00:00.073399  - multi
+-------- 9000000 ---------
+  lc     - for 2 :  0:00:36.606529 Sequencial
+lcOpenMp - for 2:  0:00:00.081626  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:40.310956 Sequencial
+lcOpenMp - for 2:  0:00:00.085746  - multi
+-------- 11000000 ---------
+  lc     - for 2 :  0:00:44.412129 Sequencial
+lcOpenMp - for 2:  0:00:00.092754  - multi
+-------- 12000000 ---------
