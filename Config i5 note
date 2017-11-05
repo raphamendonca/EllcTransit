@@ -1,0 +1,34 @@
+System:    Host: rhapy Kernel: 4.4.0-98-generic x86_64 (64 bit gcc: 5.4.0)
+           Desktop: Unity 7.4.0 (Gtk 3.18.9-1ubuntu3.3) Distro: Ubuntu 16.04 xenial
+Machine:   System: LENOVO (portable) product: 4236Z9U v: ThinkPad T420
+           Mobo: LENOVO model: 4236Z9U
+           Bios: LENOVO v: 83ET76WW (1.46 ) date: 07/05/2013
+CPU:       Dual core Intel Core i5-2520M (-HT-MCP-) cache: 3072 KB
+           flags: (lm nx sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx) bmips: 9967
+           clock speeds: max: 3200 MHz 1: 901 MHz 2: 981 MHz 3: 849 MHz 4: 899 MHz
+Graphics:  Card: Intel 2nd Generation Core Processor Family Integrated Graphics Controller
+           bus-ID: 00:02.0
+           Display Server: X.Org 1.18.4 drivers: intel (unloaded: fbdev,vesa)
+           Resolution: 1600x900@60.00hz
+           GLX Renderer: Mesa DRI Intel Sandybridge Mobile
+           GLX Version: 3.0 Mesa 17.0.7 Direct Rendering: Yes
+Audio:     Card Intel 6 Series/C200 Series Family High Definition Audio Controller
+           driver: snd_hda_intel bus-ID: 00:1b.0
+           Sound: Advanced Linux Sound Architecture v: k4.4.0-98-generic
+Network:   Card-1: Intel 82579LM Gigabit Network Connection
+           driver: e1000e v: 3.2.6-k port: 5080 bus-ID: 00:19.0
+           IF: enp0s25 state: down mac: 00:21:cc:c9:ab:70
+           Card-2: Intel Centrino Advanced-N 6205 [Taylor Peak]
+           driver: iwlwifi bus-ID: 03:00.0
+           IF: wlp3s0 state: up mac: 8c:70:5a:dd:50:f4
+Drives:    HDD Total Size: 410.1GB (21.6% used)
+           ID-1: /dev/sda model: ST9250410AS size: 250.1GB temp: 30C
+           ID-2: /dev/sdb model: FUJITSU_MHZ2160B size: 160.0GB temp: 0C
+           ID-3: /dev/mmcblk0 model: N/A size: 4.0GB
+Partition: ID-1: / size: 92G used: 83G (95%) fs: ext4 dev: /dev/sda1
+RAID:      No RAID devices: /proc/mdstat, md_mod kernel module present
+Sensors:   System Temperatures: cpu: 44.0C mobo: N/A
+           Fan Speeds (in rpm): cpu: 3238
+Info:      Processes: 226 Uptime: 2 days Memory: 1852.7/15824.0MB
+           Init: systemd runlevel: 5 Gcc sys: 5.4.0
+           Client: Shell (bash 4.3.481) inxi: 2.2.35 
