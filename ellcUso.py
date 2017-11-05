@@ -36,7 +36,7 @@ def callSingle(pt):
 
 #callSingle(10000)
 #callRange(1000000, 10000001, 1000000)
-for i in np.arange(1, 11, 1):
+for i in np.arange(1, 4, 1):
     callRange(1000000, 30000001, 1000000)
     saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
     #print(i)
