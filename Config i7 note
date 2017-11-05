@@ -1,0 +1,40 @@
+System:    Host: verity-Inspiron-5547 Kernel: 4.8.0-53-generic x86_64 (64 bit gcc: 5.4.0)
+           Desktop: Cinnamon 3.4.6 (Gtk 3.18.9-1ubuntu3.3)
+           Distro: Linux Mint 18.2 Sonya
+Machine:   System: Dell product: Inspiron 5547 v: A10
+           Mobo: Dell model: 0K5C1C v: A01 Bios: Dell v: A10 date: 08/25/2016
+CPU:       Dual core Intel Core i7-4510U (-HT-MCP-) cache: 4096 KB
+           flags: (lm nx sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx) bmips: 10377
+           clock speeds: max: 3100 MHz 1: 999 MHz 2: 1277 MHz 3: 978 MHz
+           4: 1000 MHz
+Graphics:  Card-1: Intel Haswell-ULT Integrated Graphics Controller
+           bus-ID: 00:02.0
+           Card-2: Advanced Micro Devices [AMD/ATI] Topaz XT [Radeon R7 M260/M265]
+           bus-ID: 03:00.0
+           Display Server: X.Org 1.18.4 drivers: ati,intel,amdgpu (unloaded: fbdev,vesa,radeon)
+           Resolution: 1920x1080@60.05hz
+           GLX Renderer: Mesa DRI Intel Haswell Mobile
+           GLX Version: 3.0 Mesa 12.0.6 Direct Rendering: Yes
+Audio:     Card-1 Intel 8 Series HD Audio Controller
+           driver: snd_hda_intel bus-ID: 00:1b.0
+           Card-2 Intel Haswell-ULT HD Audio Controller
+           driver: snd_hda_intel bus-ID: 00:03.0
+           Sound: Advanced Linux Sound Architecture v: k4.8.0-53-generic
+Network:   Card-1: Realtek RTL8101/2/6E PCI Express Fast/Gigabit Ethernet controller
+           driver: r8169 v: 2.3LK-NAPI port: 4000 bus-ID: 01:00.0
+           IF: enp1s0 state: down mac: 74:e6:e2:d1:d2:b5
+           Card-2: Qualcomm Atheros QCA9565 / AR9565 Wireless Network Adapter
+           driver: ath9k bus-ID: 02:00.0
+           IF: wlp2s0 state: up mac: 74:29:af:a2:eb:fb
+           Card-3: Atheros usb-ID: 001-007
+           IF: null-if-id state: N/A speed: N/A duplex: N/A mac: N/A
+Drives:    HDD Total Size: 750.2GB (1.7% used)
+           ID-1: /dev/sda model: WDC_WD7500BPVX size: 750.2GB
+Partition: ID-1: / size: 48G used: 12G (25%) fs: ext4 dev: /dev/sda7
+           ID-2: swap-1 size: 1.02GB used: 0.00GB (0%) fs: swap dev: /dev/sda6
+RAID:      No RAID devices: /proc/mdstat, md_mod kernel module present
+Sensors:   System Temperatures: cpu: 54.0C mobo: N/A
+           Fan Speeds (in rpm): cpu: 2800
+Info:      Processes: 229 Uptime: 1 day Memory: 1438.4/11903.3MB
+           Init: systemd runlevel: 5 Gcc sys: 5.4.0
+           Client: Shell (bash 4.3.481) inxi: 2.2.35 
