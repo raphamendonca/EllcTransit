@@ -58,6 +58,7 @@ def calcFLUX(curvas,pontos):
     duracao = endTime - startTime
     
     registraExecucao(curvas, pontos, duracao, 1)
+    return flux
 
     
 def calcFluxMp(curvas, pontos, processos):
@@ -74,3 +75,4 @@ def calcFluxMp(curvas, pontos, processos):
     duracao = endTime - startTime
     
     registraExecucao(curvas, pontos, duracao, processos)  
+    return flux

@@ -2,7 +2,9 @@
 ####
 import ellcCall as ec
 import pandas as pd
-import numpy as np
+import numpy as np 
+from numpy import linspace
+from matplotlib import pyplot as plt
 
 from datetime import datetime
 
@@ -30,16 +32,52 @@ def callRange(ini, max, inc):
         print("--------",pt,"---------")
 
 def callSingle(pt):
-    ec.calcFLUX( 25, pt)
-    ec.calcFluxMp(25, pt, 2)
+    flux = ec.calcFLUX( 25, pt)
+    lc_plot(25,pt, flux)
+    flux = ec.calcFluxMp(25, pt, 2)
     print("--------",pt,"---------")
+    lc_plot(25,pt, flux)
 
-#callSingle(10000)
+def lc_plot(curvas, pontos, flux):
+    time = linspace(0,curvas,pontos)
+
+    fontsize=12
+    fig=plt.figure(1,figsize=(12,8))
+    plt.subplot(211)
+    plt.xlim([0,24])
+    plt.plot(time,flux,linewidth=1,color='darkblue')
+    plt.xlabel("Time [d]",fontsize=fontsize)
+    plt.ylabel("Normalized flux",fontsize=fontsize)
+    plt.tick_params(axis='both', labelsize=fontsize)
+    plt.subplot(234)
+    plt.plot(time-6.25,flux,linewidth=1,color='darkblue')
+    plt.locator_params(axis = 'x', nbins = 4)
+    plt.xlabel("Time-6.25 [d]",fontsize=fontsize)
+    plt.ylabel("Normalized flux",fontsize=fontsize)
+    plt.xlim([-0.08,0.08])
+    plt.ylim([0.975,0.995])
+    plt.tick_params(axis='both', labelsize=fontsize)
+    plt.subplot(235)
+    plt.plot(time-9.25,flux,linewidth=1,color='darkblue')
+    plt.locator_params(axis = 'x', nbins = 4)
+    plt.xlabel("Time-9.25 [d]",fontsize=fontsize)
+    plt.xlim([-0.08,0.08])
+    plt.ylim([0.97,0.99])
+    plt.tick_params(axis='both', labelsize=fontsize)
+    plt.subplot(236)
+    plt.plot(time-14.25,flux,linewidth=1,color='darkblue')
+    plt.locator_params(axis = 'x', nbins = 4)
+    plt.xlabel("Time-14.25 [d]",fontsize=fontsize)
+    plt.xlim([-0.08,0.08])
+    plt.ylim([0.98, 1.0])
+    plt.tick_params(axis='both', labelsize=fontsize)
+    plt.tight_layout()
+
+callSingle(1000000)
 #callRange(1000000, 10000001, 1000000)
-for i in np.arange(1, 4, 1):
-    callRange(1000000, 30000001, 1000000)
-    saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
-    #print(i)
+#for i in np.arange(1, 4, 1):
+    #callRange(1000000, 30000001, 1000000)
+    #saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
 
 
 #df = pd.DataFrame({"Pontos": ec.lista_pontos, "Processos": ec.lista_processos, "Duração": ec.lista_duracoes })
