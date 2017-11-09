@@ -27,19 +27,22 @@ def saveXls(pts,prcs,durs):
 #pts = np.arange(10000,100001,10000)
 def callRange(ini, max, inc):
     for pt in np.arange(ini, max, inc):
-        ec.calcFLUX( 25, pt)
-        ec.calcFluxMp(25, pt, 2)
+        flux = ec.calcFLUX( 25, pt)
+        flux2 = ec.calcFluxMp(25, pt, 2)
         print("--------",pt,"---------")
+        lc_plot(25,pt, flux, "sequential")
+        lc_plot(25,pt, flux2, "parallel")
 
 def callSingle(pt):
     flux = ec.calcFLUX( 25, pt)
-    lc_plot(25,pt, flux)
-    flux = ec.calcFluxMp(25, pt, 2)
+    lc_plot(25,pt, flux, "sequential")
+    flux2 = ec.calcFluxMp(25, pt, 2)
     print("--------",pt,"---------")
-    lc_plot(25,pt, flux)
+    lc_plot(25,pt, flux2, "parallel")
 
-def lc_plot(curvas, pontos, flux):
+def lc_plot(curvas, pontos, flux, tipo):
     time = linspace(0,curvas,pontos)
+    data = datetime.now()
 
     fontsize=12
     fig=plt.figure(1,figsize=(12,8))
@@ -72,12 +75,13 @@ def lc_plot(curvas, pontos, flux):
     plt.ylim([0.98, 1.0])
     plt.tick_params(axis='both', labelsize=fontsize)
     plt.tight_layout()
+    plt.savefig("LC-"+tipo+str(data)+"..png")
 
-callSingle(1000000)
+#callSingle(1000000)
 #callRange(1000000, 10000001, 1000000)
-#for i in np.arange(1, 4, 1):
-    #callRange(1000000, 30000001, 1000000)
-    #saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
+for i in np.arange(1, 4, 1):
+    callRange(1000000, 30000001, 1000000)
+    saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
 
 
 #df = pd.DataFrame({"Pontos": ec.lista_pontos, "Processos": ec.lista_processos, "Duração": ec.lista_duracoes })
