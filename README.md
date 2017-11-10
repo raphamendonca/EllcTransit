@@ -9,7 +9,7 @@ preinstallet
 * Fortran ( gfortran )
 * C (build-essential)
 * OpenMp (gcc-multilib )
-
+* python-tk
 * Virtualenv
 
 Create a Virtual Enviroment
@@ -17,6 +17,7 @@ Create a Virtual Enviroment
 * Pip 
 * Numpy
 * Pandas 
+* MatlotLIb
 * xlsxwriter
 * python3-dev
 * Cython 0.27su
