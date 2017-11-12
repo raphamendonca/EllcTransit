@@ -1,0 +1,72 @@
+a = 2.765 Rsun
+  lc     - for 2 :  0:00:24.490239 Sequencial
+lcOpenMp - for 2:  0:00:00.110847  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:48.869015 Sequencial
+lcOpenMp - for 2:  0:00:00.153970  - multi
+-------- 20000000 ---------
+  lc     - for 2 :  0:01:16.064206 Sequencial
+lcOpenMp - for 2:  0:00:00.228727  - multi
+-------- 30000000 ---------
+  lc     - for 2 :  0:01:43.241951 Sequencial
+lcOpenMp - for 2:  0:00:00.305324  - multi
+-------- 40000000 ---------
+  lc     - for 2 :  0:02:12.573876 Sequencial
+lcOpenMp - for 2:  0:00:00.384010  - multi
+-------- 50000000 ---------
+Morto
+(EllcOpenmp) verity@verity-Inspiron-5547 ~/Projetos/EllcOpenmp/EllcTransit $ python ellcUso.py 
+a = 2.765 Rsun
+  lc     - for 2 :  0:00:25.080288 Sequencial
+lcOpenMp - for 2:  0:00:00.081814  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:47.059543 Sequencial
+lcOpenMp - for 2:  0:00:00.168906  - multi
+-------- 20000000 ---------
+  lc     - for 2 :  0:01:15.183725 Sequencial
+lcOpenMp - for 2:  0:00:00.324861  - multi
+-------- 30000000 ---------
+  lc     - for 2 :  0:01:42.865684 Sequencial
+lcOpenMp - for 2:  0:00:00.343053  - multi
+-------- 40000000 ---------
+  lc     - for 2 :  0:02:10.254691 Sequencial
+lcOpenMp - for 2:  0:00:00.383920  - multi
+-------- 50000000 ---------
+Morto
+(EllcOpenmp) verity@verity-Inspiron-5547 ~/Projetos/EllcOpenmp/EllcTransit $ python ellcUso.py 
+a = 2.765 Rsun
+  lc     - for 2 :  0:00:25.921883 Sequencial
+lcOpenMp - for 2:  0:00:00.084057  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:54.035885 Sequencial
+lcOpenMp - for 2:  0:00:00.159226  - multi
+-------- 20000000 ---------
+  lc     - for 2 :  0:01:18.040352 Sequencial
+lcOpenMp - for 2:  0:00:00.233682  - multi
+-------- 30000000 ---------
+  lc     - for 2 :  0:02:09.792194 Sequencial
+lcOpenMp - for 2:  0:00:00.305251  - multi
+-------- 40000000 ---------
+  lc     - for 2 :  0:02:17.364246 Sequencial
+lcOpenMp - for 2:  0:00:00.381561  - multi
+-------- 50000000 ---------
+Morto
+(EllcOpenmp) verity@verity-Inspiron-5547 ~/Projetos/EllcOpenmp/EllcTransit $ python ellcUso.py 
+a = 2.765 Rsun
+  lc     - for 2 :  0:00:22.529511 Sequencial
+lcOpenMp - for 2:  0:00:00.087741  - multi
+-------- 10000000 ---------
+  lc     - for 2 :  0:00:50.279390 Sequencial
+lcOpenMp - for 2:  0:00:00.159213  - multi
+-------- 20000000 ---------
+  lc     - for 2 :  0:01:17.616957 Sequencial
+lcOpenMp - for 2:  0:00:00.228339  - multi
+-------- 30000000 ---------
+  lc     - for 2 :  0:01:42.911270 Sequencial
+lcOpenMp - for 2:  0:00:00.307689  - multi
+-------- 40000000 ---------
+  lc     - for 2 :  0:02:36.897101 Sequencial
+lcOpenMp - for 2:  0:00:00.382564  - multi
+-------- 50000000 ---------
+Morto
+
