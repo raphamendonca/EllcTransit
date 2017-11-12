@@ -30,8 +30,8 @@ def callRange(ini, max, inc):
         flux = ec.calcFLUX( 25, pt)
         flux2 = ec.calcFluxMp(25, pt, 2)
         print("--------",pt,"---------")
-        lc_plot(25,pt, flux, "sequential")
-        lc_plot(25,pt, flux2, "parallel")
+        #lc_plot(25,pt, flux, "sequential")
+        #lc_plot(25,pt, flux2, "parallel")
 
 def callSingle(pt):
     flux = ec.calcFLUX( 25, pt)
@@ -79,8 +79,8 @@ def lc_plot(curvas, pontos, flux, tipo):
 
 #callSingle(1000000)
 #callRange(1000000, 10000001, 1000000)
-for i in np.arange(1, 4, 1):
-    callRange(1000000, 30000001, 1000000)
+for i in np.arange(1, 10, 1):
+    callRange(10000000, 70000001, 10000000)
     saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
 
 

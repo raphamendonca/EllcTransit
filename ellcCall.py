@@ -49,9 +49,9 @@ def calcFLUX(curvas,pontos):
     
     time = linspace(0,curvas,pontos)
     
-    flux = ellc.lc(time,t_zero=t_zero, period=period, \
-        radius_1=r_1, radius_2=r_2,incl=90,sbratio=0, rotfac_1 = rotfac_1, \
-        ld_1=ld_1, ldc_1=ldc_1,shape_1='sphere',shape_2='sphere',\
+    flux = ellc.lc(time,t_zero=t_zero, period=period, 
+        radius_1=r_1, radius_2=r_2,incl=90,sbratio=0, rotfac_1 = rotfac_1, 
+        ld_1=ld_1, ldc_1=ldc_1,shape_1='sphere',shape_2='sphere',
         grid_1='sparse',grid_2='sparse',spots_1=spots_1)
 
     endTime = datetime.now()
