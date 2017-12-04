@@ -77,11 +77,11 @@ def lc_plot(curvas, pontos, flux, tipo):
     plt.tight_layout()
     plt.savefig("LC-"+tipo+str(data)+"..png")
 
-#callSingle(1000000)
+callSingle(1000000)
 #callRange(1000000, 10000001, 1000000)
-for i in np.arange(1, 10, 1):
-    callRange(10000000, 70000001, 10000000)
-    saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
+#for i in np.arange(1, 10, 1):
+#    callRange(10000000, 70000001, 10000000)
+#    saveXls( ec.lista_pontos,  ec.lista_processos,  ec.lista_duracoes)
 
 
 #df = pd.DataFrame({"Pontos": ec.lista_pontos, "Processos": ec.lista_processos, "Duração": ec.lista_duracoes })
